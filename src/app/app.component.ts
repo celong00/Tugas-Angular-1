@@ -45,13 +45,13 @@ export class AppComponent  {
     if(this.cek==2) {
       this.pola='';
       this.temp=0;
-      for (var i=pangkat;i>=0;i--){
+      for (var i=pangkat;i>0;i--){
         for(var j=0;j<i;j++){
           
           this.pola+='*';
 
         }
-        if(this.temp<=angka){
+        if(this.temp<angka){
           for(var k=0;k<this.temp+1;k++){
             this.pola+='O';
           }
