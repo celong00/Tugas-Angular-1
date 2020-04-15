@@ -7,14 +7,12 @@ Input 2 :<input [(ngModel)] = "pangkat" type="text">
 <button (click) = "hasil(angka,pangkat)">Click Me</button>
 {{total}}
 <br>
-<div *ngIf="cekGenapGanjil(total) then printGenap(angka,pangkat)">
+<div *ngIf="cekGenapGanjil() then printGenap(angka,pangkat) else printGanjil(angka,pangkat)">
   
 
-</div>
+</div> 
 
 
-<div *ngIf="cekGenapGanjil(total)">
-  <div [innerHTML]="pola">
+<div [innerHTML]="pola">
     
-  </div>
 </div>
