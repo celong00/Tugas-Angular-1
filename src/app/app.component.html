@@ -1,4 +1,20 @@
 <hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+
+
+
+Input 1 :<input [(ngModel)] = "angka" type="text">
+Input 2 :<input [(ngModel)] = "pangkat" type="text">
+<button (click) = "hasil(angka,pangkat)">Click Me</button>
+{{total}}
+<br>
+<div *ngIf="cekGenapGanjil(total) then printGenap(angka,pangkat)">
+  
+
+</div>
+
+
+<div *ngIf="cekGenapGanjil(total)">
+  <div [innerHTML]="pola">
+    
+  </div>
+</div>
